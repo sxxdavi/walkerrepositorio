@@ -4,7 +4,8 @@ const ALLOWED_USERS = [
     { email: "aluno1@gmail.com", password: "senha123123" },
     { email: "cliente@empresa.com", password: "walquer2026" },
     { email: "walkersenhas01@gmail.com", password: "admin" },
-    { email: "adliderdigital@gmail.com", password: "123456" }
+    { email: "adliderdigital@gmail.com", password: "123456" },
+    { email: "walquerconsultoria@gmail.com", password: "Quesi@19" }
      // Sua conta para testes
 ];
 
