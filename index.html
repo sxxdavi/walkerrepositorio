@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Aulas | Dr. Walquer</title>
+    <!-- Fontes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <!-- TELA DE LOGIN -->
+    <div id="login-screen">
+        <div class="login-card">
+            <img src="./logo.jpg" alt="Dr. Walquer - Advogado Empresarial" class="login-logo">
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="email">E-mail de Acesso</label>
+                    <input type="email" id="email" placeholder="seu@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" placeholder="••••••••" required>
+                </div>
+                <button type="submit" class="btn-primary">Acessar Plataforma</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- TELA PRINCIPAL (ÁREA DE MEMBROS) -->
+    <div id="app-screen" class="hidden">
+        <header class="app-header">
+            <img src="./logo.jpg" alt="Dr. Walquer - Advogado Empresarial" class="header-logo">
+            <button class="btn-logout" id="btn-logout">Sair</button>
+        </header>
+
+        <div class="main-container">
+            <!-- PLAYER DE VÍDEO -->
+            <section class="video-section">
+                <div class="video-wrapper">
+                    <iframe id="video-player" src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h1 class="video-title" id="current-title">Carregando aula...</h1>
+                    <p class="video-desc" id="current-desc">Selecione uma aula na lista lateral para iniciar.</p>
+                </div>
+            </section>
+
+            <!-- LISTA DE AULAS -->
+            <aside class="sidebar">
+                <div class="sidebar-header">Conteúdo do Curso</div>
+                <ul class="lesson-list" id="lesson-list"></ul>
+            </aside>
+        </div>
+    </div>
+
+    <!-- Script JS -->
+    <script src="./script.js"></script>
+</body>
+</html>
